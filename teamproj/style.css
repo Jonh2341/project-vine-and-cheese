@@ -1,0 +1,369 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+}
+
+* {
+    font-family: Inria Serif;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+}
+
+.header {
+    box-sizing: border-box;
+    padding: 0px 70px 0px 19px;
+    background-color: #343131;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 89px;
+    width: 100%;
+}
+
+.logo-box {
+    display: flex;
+    width: 137px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-header-a{
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+}
+
+.right-header-box {
+    width: 41%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-label {
+    height: 24px;
+    width: 100%;
+    background-color: #A04747;
+}
+
+.container-ads {
+    position: relative;
+    display: flex;
+}
+
+.ad-section {
+    overflow-x: auto;
+    min-width: 100%;
+    height: 541px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.filter-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 250px;
+}
+
+.filterbtn{
+    background: #343131;
+    width: 348px;
+    height: 52px;
+    font-size: 20px;
+    color: #BABABA;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: 50px solid #2F2C2C;
+    transition: 0.5s;
+}
+.filterbtn:hover{
+    border-right: 100px solid #2F2C2C;
+    font-size: 24px;
+    height: 70px;
+}
+
+.arrow-span {
+    top: 250px;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background-color: #343131;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.images-ad {
+    width: 26%;
+    height: 390px;
+    position: relative;
+}
+
+.info-ad {
+    display: flex;
+    width: 57%;
+    height: 303px;
+}
+
+.ad-image {
+    position: absolute;
+}
+
+.vino {
+    position: absolute;
+    left: 50px;
+    z-index: 3;
+}
+
+.cheese {
+    position: absolute;
+    z-index: 2;
+    left: 90px;
+    bottom: -20px;
+}
+
+.block-info-ad {
+    box-sizing: border-box;
+    padding-top: 32px;
+    width: 341px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.paraphraf-info {width: 270px;}
+
+.block-info-ad:nth-child(1) {
+    border-right: 1px solid #BABABA;
+}
+
+.block-info-ad:last-child{padding-left: 76px;}
+
+.title-of-block-info{
+    font-size: 32px; 
+    margin-bottom: 66px;
+}
+
+.paraphraf-info{
+    font-size: 17px;
+    margin-bottom: 36px;
+}
+
+.btn-block {
+    height: 74px;
+    width: 229px;
+}
+
+.top-btn-block {
+    height: 25px;
+    display: flex;
+}
+
+.vine-top-btn-label:first-child{
+    width: 89%;
+    background-color: #A04747;
+}
+
+.vine-top-btn-label:last-child{
+    width: 11%;
+    background-color: #713D3D;
+}
+
+.cheese-top-btn-label:first-child {
+    width: 89%;
+    background-color: #EEDF7A;
+}
+
+.cheese-top-btn-label:last-child {
+    width: 11%;
+    background-color: #D8A25E;
+}
+
+.btn-info{
+    cursor: pointer;
+    border: 0px;
+    background-color: #343131;
+    color: white;
+    text-align: start;
+    width: 100%;
+    height: 49px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 10px 0px 10px 20px;
+}
+
+.section2{
+    overflow-x: auto;
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 450px;
+}
+.search{
+    background: #343131;
+    width: 348px;
+    height: 72px;
+    border: none;
+    outline:none;
+    font-size: 24px;
+    color: #BABABA;
+    padding: 30px;
+}
+.filter{
+    background: #343131;
+    width: 348px;
+    height: 72px;
+    font-size: 24px;
+    color: #BABABA;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.box{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 195px 195px 195px;
+    grid-template-rows: 38px 29px 231px 29px 231px;
+    grid-gap: 30px;
+    grid-template-areas: "popular popular popular"
+                         "cheese cheese cheese" 
+                         "cheese1 cheese2 cheese3"
+                         "vine vine vine"
+                         "vine1 vine2 vine3";
+}
+.title{
+    grid-area: popular;
+    font-size: 32px;
+}
+.che{
+    grid-area: cheese;
+    font-size: 24px;
+}
+.card{
+    position: relative;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.one{
+    grid-area: cheese1;
+}
+.two{
+    grid-area: cheese2;
+}
+.three{
+    grid-area: cheese3;
+}
+.vi{
+    grid-area: vine;
+    font-size: 24px;
+}
+.four{
+    grid-area: vine1;
+}
+.five{
+    grid-area: vine2;
+}
+.six{
+    grid-area: vine3;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80px;
+    align-self: end;
+}
+.secret-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 155px;
+}
+.name{
+    font-size: 22px;
+}
+.gl{ 
+    font-size: 14px;
+    color: #929292;
+}
+.button{
+    width: 158px;
+    height: 104px;
+    background: #343131;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 13px;
+    border: none;
+}
+.price{
+    width: 139px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+.img-card{
+    position: absolute;
+    margin-top: -20px;
+}
+.taleggio{
+    margin-top: -35px;
+}
+.chainti{
+    margin-top: 5px;
+}
+.cavine{
+    margin-top: -6px;
+}
+.line{
+    width: 100%;
+    height: 18px;
+    background: #EEDF7A;
+    border-right: 18px solid #D8A25E;
+}
+.line2{
+    width: 100%;
+    height: 18px;
+    background: #A04747;
+    border-right: 18px solid #713D3D;
+}
+.footer{
+    overflow-x: auto;
+    background: #343131;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
